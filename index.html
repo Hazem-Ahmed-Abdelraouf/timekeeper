@@ -215,9 +215,10 @@ h2 {
   
 
     
-    <!--<p class="countdown-status for-edit hide">
+   <p class="countdown-status for-edit hide">
       Input <a href="#edit">values</a> below and press <a href="#start:0">start</a>.
-    </p><p class="countdown-status for-countdown hide">
+    
+    <!--</p><p class="countdown-status for-countdown hide">
       <a href="#alarm">Enable sound</a>
       -
       <a href="#stop">Stop timer</a>
@@ -467,7 +468,6 @@ class Timekeeper {
 }
 
 const t = new Timekeeper().attach(document.querySelector('form'));
-t.start(86900);
-t.toggleAlarm();
+
 //]]></script></body>
 </html>

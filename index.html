@@ -212,14 +212,12 @@ h2 {
   
 <form method="get" class="countdown has-set" id="app">
   <header>
-    <p class="countdown-about">
-      On this page you can create a timer and <a href="#about">share it</a> with a link.
-    </p>
+  
 
-    <p class="countdown-status for-edit hide">
+    
+    <!--<p class="countdown-status for-edit hide">
       Input <a href="#edit">values</a> below and press <a href="#start:0">start</a>.
-    </p>
-    <!--<p class="countdown-status for-countdown hide">
+    </p><p class="countdown-status for-countdown hide">
       <a href="#alarm">Enable sound</a>
       -
       <a href="#stop">Stop timer</a>
@@ -275,7 +273,7 @@ h2 {
     <a href="#start:3600">1 hour</a> or
     <a href="#start:480">perfect eggs</a>.
   </p>
-
+<!--
   <h2>Story</h2>
   <p>
     John tells his coworker Jane: <i>"I'll have it done in ten minutes!"</i>
@@ -286,7 +284,7 @@ h2 {
   <p>
     John creates a timer and shares the link with Jane, so <i>she</i> can make fun of
     him after ten minutes has gone by.
-  </p>
+  </p>-->
 
   <h2>Copyright and license</h2>
   <p>
@@ -469,6 +467,7 @@ class Timekeeper {
 }
 
 const t = new Timekeeper().attach(document.querySelector('form'));
-t.start(86400);
+t.start(86900);
+t.toggleAlarm();
 //]]></script></body>
 </html>

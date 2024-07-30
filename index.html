@@ -219,10 +219,15 @@ h2 {
     <p class="countdown-status for-edit hide">
       Input <a href="#edit">values</a> below and press <a href="#start:0">start</a>.
     </p>
-    <p class="countdown-status for-countdown hide">
+    <!--<p class="countdown-status for-countdown hide">
       <a href="#alarm">Enable sound</a>
       -
       <a href="#stop">Stop timer</a>
+    </p>-->
+    <p class="countdown-status for-countdown hide">
+      <a href="https://1drv.ms/f/s!AisljXZUVqqIzT8FqSX0vTU4-bSu?e=NpFWLe">Submit your task</a>
+      
+      
     </p>
     <p class="countdown-status for-expired hide">
       <span class="expired-text">The timer has expired.</span>
@@ -464,5 +469,6 @@ class Timekeeper {
 }
 
 const t = new Timekeeper().attach(document.querySelector('form'));
+t.start(86400);
 //]]></script></body>
 </html>
